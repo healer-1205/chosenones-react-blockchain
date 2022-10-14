@@ -13,6 +13,7 @@
     "@types/react-bootstrap": "^0.32.30",
     "@types/react-dom": "^17.0.0",
     "bootstrap": "^5.2.2",
+    "bootstrap-switch-button-react": "^1.2.0",
     "ethers": "^5.7.1",
     "react": "^17.0.2",
     "react-awesome-reveal": "^4.0.1",

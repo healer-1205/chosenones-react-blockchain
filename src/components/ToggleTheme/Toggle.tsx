@@ -9,27 +9,29 @@ function Toggle() {
   // the opposite, for screenreaders
   const [ariaActive, setAriaActive] = useState(true)
 
-  const handleOnClick = () => {
+  const changeThemeAndToggle = () => {
     if (toggleDark) {
       if (dark === "theme-dark") {
         toggleDark("theme-light")
+        document.documentElement.className = "theme-light"
         setActive(true)
         setAriaActive(false)
       } else {
         toggleDark("theme-dark")
+        document.documentElement.className = "theme-dark"
         setActive(false)
         setAriaActive(true)
       }
     }
   }
 
+  const handleOnClick = () => {
+    changeThemeAndToggle()
+  }
+
   const handleKeypress = (e: any) => {
     if (e.code === "Enter") {
-    }
-    if (toggleDark) {
-      if (dark === "theme-dark") {
-        toggleDark("theme-light")
-      } else toggleDark("theme-dark")
+      changeThemeAndToggle()
     }
   }
 

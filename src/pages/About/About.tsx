@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
+import { ThemeContext } from "../../context/ThemeContext"
 import "./About.scss"
 import MainDarkBGImage from "../../assets/images/about-mainbg-dark.png"
 import MainLightBGImage from "../../assets/images/about-mainbg-light.png"
 import HomeSvg from "../../assets/images/svgs/home.svg"
 import ShareSvg from "../../assets/images/svgs/share.svg"
 import CreateSvg from "../../assets/images/svgs/create.svg"
-import { ThemeContext } from "../../context/ThemeContext"
 
 export const About: React.FC = () => {
   const { dark } = useContext(ThemeContext)

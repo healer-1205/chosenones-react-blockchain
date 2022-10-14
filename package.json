@@ -3,24 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
+    "@types/react-bootstrap": "^0.32.30",
     "@types/react-dom": "^17.0.0",
+    "bootstrap": "^5.2.2",
+    "ethers": "^5.7.1",
     "react": "^17.0.2",
+    "react-awesome-reveal": "^4.0.1",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.1",
     "react-scripts": "4.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
     "typescript": "4.5.5",
+    "wagmi": "^0.6.7",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "contract-typings": "typechain --target=ethers-v5 --out-dir src/contracts src/abis/*.json"
   },
   "eslintConfig": {
     "extends": [
@@ -41,8 +53,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.1.8"
+    "@typechain/ethers-v5": "^10.1.0",
+    "typechain": "^8.1.0"
   }
 }

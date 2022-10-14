@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
-import MainDarkBGImage from "../../assets/images/home-mainbg-dark.png"
-import MainLightBGImage from "../../assets/images/home-mainbg-light.png"
+import { Images, svgIcons } from "../../assets"
 import "./Home.scss"
 
 export const Home: React.FC = () => {
@@ -15,10 +14,39 @@ export const Home: React.FC = () => {
   return (
     <div className="home">
       {isDarkImage ? (
-        <img src={MainDarkBGImage} alt="MainBG" className="home__bgImg" />
+        <img src={Images.homeMainBgDark} alt="MainBG" className="home__bgImg" />
       ) : (
-        <img src={MainLightBGImage} alt="MainBG" className="home__bgImg" />
+        <img src={Images.homeMainBgLight} alt="MainBG" className="home__bgImg" />
       )}
+      <div className="home__socials">
+        {isDarkImage ? (
+          <div>
+            <img src={svgIcons.darkTwitterIcon} alt="Twitter" width="30" height="30" className="home__socials__icon" />
+            <img src={svgIcons.darkMsgIcon} alt="Message" width="30" height="30" className="home__socials__icon" />
+            <img
+              src={svgIcons.darkFacebookIcon}
+              alt="Facebook"
+              width="30"
+              height="30"
+              className="home__socials__icon"
+            />
+            <img src={svgIcons.darkBeIcon} alt="Be" className="home__socials__icon" />
+          </div>
+        ) : (
+          <div>
+            <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="home__socials__icon" />
+            <img src={svgIcons.lightMsgIcon} alt="Message" className="home__socials__icon" />
+            <img
+              src={svgIcons.lightFacebookIcon}
+              alt="Facebook"
+              width="30"
+              height="30"
+              className="home__socials__icon"
+            />
+            <img src={svgIcons.lightBeIcon} alt="Be" className="home__socials__icon" />
+          </div>
+        )}
+      </div>
     </div>
   )
 }

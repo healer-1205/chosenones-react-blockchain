@@ -1,16 +1,20 @@
 .theme-light {
-  --title-text: #000000;
+  --aboutpage-title-text: #000000;
   --navbar-text: #000000;
-  --description-text: #151515;
+  --aboutpage--description-text: #151515;
   --background-color: #ffffff;
+  --utilitypage-title-text: #111111;
+  --utilitypage-description-text: #0a0a0a;
 }
 
 /* --light-text is fine on on the first 3, --dark-text is fine on all of them, --dark-text and dark-background are fine as text on --accent */
 .theme-dark {
-  --title-text: #ffffff;
+  --aboutpage-title-text: #ffffff;
   --navbar-text: #ffffff;
-  --description-text: #d5d5d5;
+  --aboutpage--description-text: #d5d5d5;
   --background-color: #000000;
+  --utilitypage-title-text: #ffffff;
+  --utilitypage-description-text: #ffffff;
 }
 
 body {

@@ -20,7 +20,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 82px;
-  color: var(--title-text);
+  color: var(--aboutpage-title-text);
 }
 
 .description {
@@ -30,14 +30,14 @@
   font-size: 30px;
   line-height: 45px;
   letter-spacing: 0.02em;
-  color: var(--description-text);
+  color: var(--aboutpage--description-text);
 }
 
 .svgIcon {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) {
   .title {
     font-size: 30px;
     line-height: 50px;

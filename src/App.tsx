@@ -9,7 +9,6 @@ import "./App.scss"
 function App() {
   const { dark } = useContext(ThemeContext)
   useEffect(() => {
-    console.log(dark)
     if (dark === "theme-dark") {
       document.documentElement.className = "theme-dark"
     } else document.documentElement.className = "theme-light"

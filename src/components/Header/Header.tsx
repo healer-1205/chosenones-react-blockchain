@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Row, Col, Offcanvas } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { HiMenu } from "react-icons/hi"
 import Toggle from "../ToggleTheme/Toggle"
-
-import Logo from "../../assets/images/logos/dark-logo.png"
+import { ThemeContext } from "../../context/ThemeContext"
+import { Logos } from "../../assets"
 import "./Header.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -13,6 +13,14 @@ export const Header: React.FC = () => {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
   const [activeIndex, setActiveIndex] = useState(-1)
+
+  const { dark } = useContext(ThemeContext)
+  const [isDarkImage, setIsDarkImage] = useState(true)
+  useEffect(() => {
+    if (dark === "theme-dark") {
+      setIsDarkImage(true)
+    } else setIsDarkImage(false)
+  }, [dark])
 
   const navLinks = [
     {
@@ -63,7 +71,11 @@ export const Header: React.FC = () => {
       </Offcanvas>
       <Row className="justify-content-around">
         <Col xs={3} lg={3}>
-          <img width="150px" src={Logo} alt="" />
+          {isDarkImage ? (
+            <img width="150px" src={Logos.DarkLogo} alt="" />
+          ) : (
+            <img width="150px" src={Logos.LightLogo} alt="" />
+          )}
         </Col>
         <Col xs={6} lg={6}>
           <ul className="navbar-li">

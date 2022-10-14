@@ -2,11 +2,7 @@ import React, { useContext, useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { ThemeContext } from "../../context/ThemeContext"
 import "./About.scss"
-import MainDarkBGImage from "../../assets/images/about-mainbg-dark.png"
-import MainLightBGImage from "../../assets/images/about-mainbg-light.png"
-import HomeSvg from "../../assets/images/svgs/home.svg"
-import ShareSvg from "../../assets/images/svgs/share.svg"
-import CreateSvg from "../../assets/images/svgs/create.svg"
+import { Images, svgIcons } from "../../assets"
 
 export const About: React.FC = () => {
   const { dark } = useContext(ThemeContext)
@@ -19,11 +15,10 @@ export const About: React.FC = () => {
   return (
     <div className="about">
       {isDarkImage ? (
-        <img src={MainDarkBGImage} alt="MainBG" className="bgImg" />
+        <img src={Images.aboutMainBgDark} alt="MainBG" className="bgImg" />
       ) : (
-        <img src={MainLightBGImage} alt="MainBG" className="bgImg" />
+        <img src={Images.aboutMainBgLight} alt="MainBG" className="bgImg" />
       )}
-
       <Container className="content-container">
         <Row>
           <Col xs={12} lg={12}>
@@ -95,7 +90,7 @@ export const About: React.FC = () => {
         </Row>
         <Row style={{ marginBottom: "5%" }}>
           <Col xs={12} md={12} lg={6} xl={6}>
-            <img src={HomeSvg} alt="HomeSvg" className="svgIcon" />
+            <img src={svgIcons.home} alt="HomeSvg" className="svgIcon" />
             <p className="description">
               Real Estate
               <br />
@@ -105,7 +100,7 @@ export const About: React.FC = () => {
             </p>
           </Col>
           <Col xs={12} md={12} lg={6} xl={6}>
-            <img src={ShareSvg} alt="ShareSvg" className="svgIcon" />
+            <img src={svgIcons.share} alt="ShareSvg" className="svgIcon" />
             <p className="description">
               Cascade - Simplify your taxes
               <br />
@@ -118,7 +113,7 @@ export const About: React.FC = () => {
         </Row>
         <Row>
           <Col xs={12} md={12} lg={6} xl={6}>
-            <img src={CreateSvg} alt="CreateSvg" className="svgIcon" />
+            <img src={svgIcons.create} alt="CreateSvg" className="svgIcon" />
             <p className="description">
               Create to Earn Accelerator Program
               <br />

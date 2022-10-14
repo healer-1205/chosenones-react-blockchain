@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Row, Col, Offcanvas } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { HiMenu } from "react-icons/hi"
-import BootstrapSwitchButton from "bootstrap-switch-button-react"
+import Toggle from "../ToggleTheme/Toggle"
 
 import Logo from "../../assets/images/logos/dark-logo.png"
 import "./Header.scss"
@@ -83,7 +83,7 @@ export const Header: React.FC = () => {
           </ul>
         </Col>
         <Col xs={2} lg={3} className="justify-content-around__switch-btn">
-          <BootstrapSwitchButton checked={true} size="xs" />
+          <Toggle />
         </Col>
         <Col xs={1} className="menu-icon">
           <div onClick={handleShow}>

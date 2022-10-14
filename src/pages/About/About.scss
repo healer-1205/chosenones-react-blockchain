@@ -20,7 +20,7 @@
   font-weight: 700;
   font-size: 60px;
   line-height: 82px;
-  color: #fff;
+  color: var(--title-text);
 }
 
 .description {
@@ -30,7 +30,7 @@
   font-size: 30px;
   line-height: 45px;
   letter-spacing: 0.02em;
-  color: #d5d5d5;
+  color: var(--description-text);
 }
 
 .svgIcon {

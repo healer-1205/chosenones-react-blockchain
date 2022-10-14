@@ -1,45 +1,47 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
+import { ThemeContext } from "../../context/ThemeContext"
 import "./toggle.scss"
-import { setTheme } from "./themes"
 
 function Toggle() {
+  const { dark, toggleDark } = useContext(ThemeContext)
   // false = dark mode because of the way I wrote the CSS
   const [active, setActive] = useState(false)
   // the opposite, for screenreaders
   const [ariaActive, setAriaActive] = useState(true)
-  let theme = localStorage.getItem("theme")
-
-  const changeThemeAndToggle = () => {
-    if (localStorage.getItem("theme") === "theme-dark") {
-      setTheme("theme-light")
-      setActive(true)
-      setAriaActive(false)
-    } else {
-      setTheme("theme-dark")
-      setActive(false)
-      setAriaActive(true)
-    }
-  }
 
   const handleOnClick = () => {
-    changeThemeAndToggle()
+    if (toggleDark) {
+      if (dark === "theme-dark") {
+        toggleDark("theme-light")
+        setActive(true)
+        setAriaActive(false)
+      } else {
+        toggleDark("theme-dark")
+        setActive(false)
+        setAriaActive(true)
+      }
+    }
   }
 
   const handleKeypress = (e: any) => {
     if (e.code === "Enter") {
-      changeThemeAndToggle()
+    }
+    if (toggleDark) {
+      if (dark === "theme-dark") {
+        toggleDark("theme-light")
+      } else toggleDark("theme-dark")
     }
   }
 
   useEffect(() => {
-    if (localStorage.getItem("theme") === "theme-dark") {
+    if (dark === "theme-dark") {
       setActive(false)
       setAriaActive(true)
-    } else if (localStorage.getItem("theme") === "theme-light") {
+    } else {
       setActive(true)
       setAriaActive(false)
     }
-  }, [theme])
+  }, [dark])
 
   return (
     <div className="container--toggle">

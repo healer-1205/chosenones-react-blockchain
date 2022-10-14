@@ -1,15 +1,29 @@
-import React from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import "./About.scss"
-import MainBGImage from "../../assets/images/about-mainbg-dark.png"
+import MainDarkBGImage from "../../assets/images/about-mainbg-dark.png"
+import MainLightBGImage from "../../assets/images/about-mainbg-light.png"
 import HomeSvg from "../../assets/images/svgs/home.svg"
 import ShareSvg from "../../assets/images/svgs/share.svg"
 import CreateSvg from "../../assets/images/svgs/create.svg"
+import { ThemeContext } from "../../context/ThemeContext"
 
 export const About: React.FC = () => {
+  const { dark } = useContext(ThemeContext)
+  const [isDarkImage, setIsDarkImage] = useState(true)
+  useEffect(() => {
+    if (dark === "theme-dark") {
+      setIsDarkImage(true)
+    } else setIsDarkImage(false)
+  }, [dark])
   return (
     <div className="about">
-      <img src={MainBGImage} alt="MainBG" className="bgImg" />
+      {isDarkImage ? (
+        <img src={MainDarkBGImage} alt="MainBG" className="bgImg" />
+      ) : (
+        <img src={MainLightBGImage} alt="MainBG" className="bgImg" />
+      )}
+
       <Container className="content-container">
         <Row>
           <Col xs={12} lg={12}>

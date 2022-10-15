@@ -33,31 +33,31 @@ export const Team: React.FC = () => {
               <img src={Images.team1} alt="team1" className="team__container__image" />
               {isDarkImage ? (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
               ) : (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
@@ -69,31 +69,31 @@ export const Team: React.FC = () => {
               <img src={Images.team2} alt="team1" className="team__container__image" />
               {isDarkImage ? (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
               ) : (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
@@ -105,31 +105,31 @@ export const Team: React.FC = () => {
               <img src={Images.team3} alt="team1" className="team__container__image" />
               {isDarkImage ? (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
               ) : (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
@@ -143,31 +143,31 @@ export const Team: React.FC = () => {
               <img src={Images.team4} alt="team1" className="team__container__image" />
               {isDarkImage ? (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
               ) : (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
@@ -179,31 +179,31 @@ export const Team: React.FC = () => {
               <img src={Images.team5} alt="team1" className="team__container__image" />
               {isDarkImage ? (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
               ) : (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
@@ -215,31 +215,31 @@ export const Team: React.FC = () => {
               <img src={Images.team6} alt="team1" className="team__container__image" />
               {isDarkImage ? (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.darkBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>
               ) : (
                 <div className="team__container__socials">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightTwitterIcon} alt="Twitter" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightMsgIcon} alt="Msg" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightFacebookIcon} alt="Facebook" className="team__container__socials__icon" />
                   </a>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
                     <img src={svgIcons.lightBeIcon} alt="Be" className="team__container__socials__icon" />
                   </a>
                 </div>

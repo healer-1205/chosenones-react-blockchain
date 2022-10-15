@@ -4,6 +4,7 @@ import { ThemeContext, ThemeProvider } from "./context/ThemeContext"
 import { Home } from "./pages/Home"
 import { Utility } from "./pages/Utility"
 import { About } from "./pages/About"
+import { Team } from "./pages/Team"
 import { Header } from "./components/Header/Header"
 import "./App.scss"
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/utility" element={<Utility />} />
           <Route path="/about" element={<About />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </ThemeProvider>
     </>

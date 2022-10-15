@@ -1,0 +1,23 @@
+.team {
+  background-color: var(--background-color);
+  &__title {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 125px;
+    line-height: 218px;
+    color: var(--utilitypage-title-text);
+  }
+  &__description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.055em;
+    color: var(--utilitypage-description-text);
+  }
+  &__Col {
+    padding: 30px 40px !important;
+  }
+}

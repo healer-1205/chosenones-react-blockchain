@@ -1,0 +1,11 @@
+.roadmap {
+  background-color: var(--background-color);
+  &__title {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 125px;
+    line-height: 218px;
+    color: var(--utilitypage-title-text);
+  }
+}

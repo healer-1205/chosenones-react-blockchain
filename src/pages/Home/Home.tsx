@@ -47,6 +47,8 @@ export const Home: React.FC = () => {
           </div>
         )}
       </div>
+      <p className="home__introduction1">WE ARE THE ONES WHO</p>
+      <p className="home__introduction2">REFUSED TO GIVE UP.</p>
     </div>
   )
 }

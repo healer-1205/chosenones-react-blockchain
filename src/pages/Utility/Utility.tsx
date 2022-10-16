@@ -1,17 +1,10 @@
-import React, { useContext, useEffect, useState } from "react"
+import React from "react"
 import { Col, Container, Row } from "react-bootstrap"
-import { ThemeContext } from "../../context/ThemeContext"
 import { NFTs } from "../../assets"
 import "./Utility.scss"
 
 export const Utility: React.FC = () => {
-  const { dark } = useContext(ThemeContext)
-  const [isDarkImage, setIsDarkImage] = useState(true)
-  useEffect(() => {
-    if (dark === "theme-dark") {
-      setIsDarkImage(true)
-    } else setIsDarkImage(false)
-  }, [dark])
+  const nfts = [NFTs.NFT01, NFTs.NFT02, NFTs.NFT03, NFTs.NFT04, NFTs.NFT05, NFTs.NFT06]
   return (
     <div className="utility">
       <Container>
@@ -30,26 +23,13 @@ export const Utility: React.FC = () => {
       </Container>
       <Container>
         <Row>
-          <Col sm={12} md={4} lg={4} className="utility__Col">
-            <img src={NFTs.NFT01} alt="#01" className="utility__NFT" />
-          </Col>
-          <Col sm={12} md={4} lg={4} className="utility__Col">
-            <img src={NFTs.NFT02} alt="#02" className="utility__NFT" />
-          </Col>
-          <Col sm={12} md={4} lg={4} className="utility__Col">
-            <img src={NFTs.NFT03} alt="#03" className="utility__NFT" />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={12} md={4} lg={4} className="utility__Col">
-            <img src={NFTs.NFT04} alt="#04" className="utility__NFT" />
-          </Col>
-          <Col sm={12} md={4} lg={4} className="utility__Col">
-            <img src={NFTs.NFT05} alt="#05" className="utility__NFT" />
-          </Col>
-          <Col sm={12} md={4} lg={4} className="utility__Col">
-            <img src={NFTs.NFT06} alt="#06" className="utility__NFT" />
-          </Col>
+          {nfts.map((nft, index) => {
+            return (
+              <Col key={index} sm={12} md={4} lg={4} className="utility__Col">
+                <img src={nft} alt="NFT" className="utility__NFT" />
+              </Col>
+            )
+          })}
         </Row>
       </Container>
     </div>

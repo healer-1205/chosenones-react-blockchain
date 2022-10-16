@@ -8,4 +8,43 @@
     line-height: 218px;
     color: var(--utilitypage-title-text);
   }
+  &__container {
+    position: relative;
+    padding-bottom: 50px;
+    &__bg {
+      background-color: #8d99ae;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 70px;
+      bottom: 120px;
+    }
+    &__image {
+      position: relative;
+    }
+  }
+}
+
+.image-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.roadmap-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .roadmap {
+    &__title {
+      font-size: 30px;
+      line-height: 50px;
+      padding: 20px 0px;
+    }
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }

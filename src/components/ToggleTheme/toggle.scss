@@ -43,6 +43,7 @@
 
 .toggle--checkbox {
   opacity: 0;
+  display: none;
 }
 
 .toggle--checkbox:focus + .toggle--label {

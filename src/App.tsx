@@ -7,6 +7,7 @@ import { Util } from "./pages/Util"
 import { About } from "./pages/About"
 import { Team } from "./pages/Team"
 import { Roadmap } from "./pages/Roadmap"
+import { Roadstep } from "./pages/Roadstep"
 import { Header } from "./components/Header/Header"
 import "./App.scss"
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/roadmap/:id" element={<Roadstep />} />
         </Routes>
       </ThemeProvider>
     </>

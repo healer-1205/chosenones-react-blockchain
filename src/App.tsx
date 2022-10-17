@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import { ThemeContext, ThemeProvider } from "./context/ThemeContext"
 import { Home } from "./pages/Home"
 import { Utility } from "./pages/Utility"
+import { Util } from "./pages/Util"
 import { About } from "./pages/About"
 import { Team } from "./pages/Team"
 import { Roadmap } from "./pages/Roadmap"
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/utility" element={<Utility />} />
+          <Route path="/utility/:id" element={<Util />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/roadmap" element={<Roadmap />} />

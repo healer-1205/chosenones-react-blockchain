@@ -90,7 +90,11 @@ export const About: React.FC = () => {
         </Row>
         <Row style={{ marginBottom: "5%" }}>
           <Col xs={12} md={12} lg={6} xl={6}>
-            <img src={svgIcons.home} alt="HomeSvg" className="svgIcon" />
+            {isDarkImage ? (
+              <img src={svgIcons.darkHome} alt="HomeSvg" className="svgIcon" />
+            ) : (
+              <img src={svgIcons.lightHome} alt="HomeSvg" className="svgIcon" />
+            )}
             <p className="description">
               Real Estate
               <br />
@@ -100,7 +104,11 @@ export const About: React.FC = () => {
             </p>
           </Col>
           <Col xs={12} md={12} lg={6} xl={6}>
-            <img src={svgIcons.share} alt="ShareSvg" className="svgIcon" />
+            {isDarkImage ? (
+              <img src={svgIcons.darkShare} alt="ShareSvg" className="svgIcon" />
+            ) : (
+              <img src={svgIcons.lightShare} alt="ShareSvg" className="svgIcon" />
+            )}
             <p className="description">
               Cascade - Simplify your taxes
               <br />
@@ -113,7 +121,11 @@ export const About: React.FC = () => {
         </Row>
         <Row>
           <Col xs={12} md={12} lg={6} xl={6}>
-            <img src={svgIcons.create} alt="CreateSvg" className="svgIcon" />
+            {isDarkImage ? (
+              <img src={svgIcons.darkCreate} alt="CreateSvg" className="svgIcon" />
+            ) : (
+              <img src={svgIcons.lightCreate} alt="CreateSvg" className="svgIcon" />
+            )}
             <p className="description">
               Create to Earn Accelerator Program
               <br />

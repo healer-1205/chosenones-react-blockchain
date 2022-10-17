@@ -1,6 +1,9 @@
-import home from "./home.svg"
-import create from "./create.svg"
-import share from "./share.svg"
+import darkHome from "./dark/home.svg"
+import darkCreate from "./dark/create.svg"
+import darkShare from "./dark/share.svg"
+import lightHome from "./light/home.svg"
+import lightCreate from "./light/create.svg"
+import lightShare from "./light/share.svg"
 import lightBeIcon from "./light/beIcon.svg"
 import lightFacebookIcon from "./light/facebookIcon.svg"
 import lightMsgIcon from "./light/msgIcon.svg"
@@ -11,9 +14,12 @@ import darkMsgIcon from "./dark/msgIcon.svg"
 import darkTwitterIcon from "./dark/twitterIcon.svg"
 
 const svgIcons = {
-  home,
-  create,
-  share,
+  darkHome,
+  darkCreate,
+  darkShare,
+  lightHome,
+  lightCreate,
+  lightShare,
   lightBeIcon,
   lightFacebookIcon,
   lightMsgIcon,
